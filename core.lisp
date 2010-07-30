@@ -38,6 +38,7 @@
 (defun move-question-to-position (questionnaire question position)
   (progn
     (setf (questions questionnaire) 
-	  (move-element-to-position question position (questions questionnaire)))))	 
+	  (move-element-to-position question position (questions questionnaire)))
+    questionnaire))
 	 
    
